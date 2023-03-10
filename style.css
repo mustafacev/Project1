@@ -16,3 +16,14 @@ body {
   flex-wrap: wrap;
   perspective: 1000px;
 }
+
+/* Set the position of the memory card as relative and add a transition to it */
+.cardGame {
+  width: 23%;
+  height: 23%;
+  margin: 5px;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+}
