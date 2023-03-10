@@ -4,3 +4,8 @@ const cards = document.querySelectorAll('.cardGame');
 // Select the game board element
 const gameBoard = document.querySelector('.game');
 //console.log(gameBoard)
+// Variables to keep track of the first and second card selected, and the number of cards matched
+let firstCard = null;
+let secondCard = null;
+let cardsMatched = 0;
+let fixBoard = false;
