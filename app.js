@@ -44,3 +44,13 @@ function compareCards() {
         unflipCards();
     }
 }
+// Function to check winning condition
+function allMatched() {
+    if (cardsMatched === totalCards) {
+        // If all cards have been matched, create a win message element and add it to the game board
+        const winMessage = document.createElement('div');
+        winMessage.classList.add('message');
+        winMessage.textContent = 'Congratulations, you won!';
+        gameBoard.appendChild(winMessage);
+    }
+}
