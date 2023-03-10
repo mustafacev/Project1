@@ -8,3 +8,11 @@ body {
   display: flex;
   background: #E0C7BB;
 }
+.game {
+  width: 640px;
+  height: 640px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
