@@ -27,3 +27,32 @@ body {
   transform-style: preserve-3d;
   transition: transform .5s;
 }
+.cardGame.flip {
+  transform: rotateY(180deg);
+}
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  border-radius: 5px;
+  background: #549AD3;
+  backface-visibility: hidden;
+}
+.front-face {
+  transform: rotateY(180deg);
+}
+/* set the position of the front
+and back of the card to absolute and rotate
+the card to 180deg so the front side will be hidden. */
+.message {
+  position: absolute;
+  top: 98%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  color: #256D31;
+}
