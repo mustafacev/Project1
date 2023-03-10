@@ -63,3 +63,15 @@ function unflipCards() {
         reset();
     }, 1000);
 };
+//Function to shuffle cards
+function shuffle() {
+    cards.forEach(card => {
+        let randomPosition = Math.floor(Math.random() * 12);
+        card.style.order = randomPosition;
+    })
+}
+shuffle();
+// Loop through the shuffled cards and add a click event listener to each card
+for (let i = 0; i < cards.length; i++) {
+    cards[i].addEventListener('click', flipCard);
+}
