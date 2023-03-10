@@ -9,3 +9,13 @@ let firstCard = null;
 let secondCard = null;
 let cardsMatched = 0;
 let fixBoard = false;
+
+// The total number of cards in the game
+const totalCards = cards.length;
+//console.log(totalCards);
+function reset() {
+    firstCard = null;
+    secondCard = null;
+    hasFlippedCard = false;
+    fixBoard = false;
+}
