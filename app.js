@@ -31,3 +31,16 @@ function flipCard() {
         compareCards();
     }
 }
+function compareCards() {
+    if (firstCard.id === secondCard.id) {
+        firstCard.removeEventListener('click', flipCard);
+        secondCard.removeEventListener('click', flipCard);
+        firstCard = null;
+        secondCard = null;
+        // Increment the number of matched cards by 2
+        cardsMatched += 2;
+        allMatched();
+    } else {
+        unflipCards();
+    }
+}
