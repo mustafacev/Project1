@@ -54,3 +54,12 @@ function allMatched() {
         gameBoard.appendChild(winMessage);
     }
 }
+// Function to unflip two cards if they don't match
+function unflipCards() {
+    lockBoard = true;
+    setTimeout(() => {
+        firstCard.classList.remove('flip');
+        secondCard.classList.remove('flip');
+        reset();
+    }, 1000);
+};
