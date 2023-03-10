@@ -19,3 +19,15 @@ function reset() {
     hasFlippedCard = false;
     fixBoard = false;
 }
+function flipCard() {
+    // Add the "flip" class to the clicked card to show its front image
+    this.classList.add('flip');
+    if (!firstCard) {
+        // If this is the first card selected, set it as the first card variable
+        firstCard = this;
+    } else {
+        // If this is the second card selected, set it as the second card variable
+        secondCard = this;
+        compareCards();
+    }
+}
